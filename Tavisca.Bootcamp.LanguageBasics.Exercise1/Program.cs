@@ -47,16 +47,16 @@ namespace Tavisca.Bootcamp.LanguageBasics.Exercise1
                 return -1;
             }
 
-            string temp = compResult.ToString();
+            string res = compResult.ToString();
 
-            if(temp.Length != givenResult.Length){
+            if(res.Length != givenResult.Length){
                 // length mismatch
                 return -1;
             }
             else{
 
              int index=givenResult.IndexOf('?');
-             return (int)temp[index]-48;
+             return (int)res[index]-48;
              
          }       
 
